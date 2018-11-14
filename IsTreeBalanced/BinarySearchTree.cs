@@ -93,6 +93,8 @@ namespace IsTreeBalanced
             int heightAtRoot = HeightOfTree(binaryTreeNode.GetLeftNode()) - 
                                HeightOfTree(binaryTreeNode.GetRightNode());
 
+            heightAtRoot = Math.Abs(heightAtRoot);
+
             if (heightAtRoot >= 0 && heightAtRoot < 2) {
                 return true;
             }
